@@ -12,27 +12,31 @@ p{
     color: #ce7852;
 }
 .logo{
-    font-size: 25px;
+    font-size: 30px;
 }
 .content{
-    height: 150px;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 85px;
 }
 .content-block {
-    width: 22%;
+    min-width: 297px;
+    width: 297px;
+    height: 80px;
     border: 5px solid #f8f3ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
     cursor: pointer;
+    padding: 15px
 }
 .content-block p{
     max-width: 70%;
     padding: 0;
+    font-size: 20px;
 }
 .bottom{
-    margin-top: 5%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -43,28 +47,45 @@ p{
     height: 2px;
     width: 48%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .content-block p{
-        font-size: 12px;
+        font-size: 18px;
         max-width: 60%;
     }
     .logo{
-        font-size: 20px;
-    }
-    .content{
-        height: 120px;
+        font-size: 22px;
     }
     svg{
         scale: 0.9;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .content-block p{
-        font-size: 8px;
-        max-width: 45%;
+        font-size: 16px;
+        max-width: 50%;
     }
     .logo{
+        font-size: 20px;
+    }
+    svg{
+        scale: 0.8;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        justify-content: center;
+    }
+}
+@media (max-width: 1200px) {
+    .content-block p{
         font-size: 15px;
+        max-width: 50%;
+    }
+    .logo{
+        font-size: 18px;
     }
     svg{
         scale: 0.7;
