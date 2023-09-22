@@ -79,7 +79,7 @@ p{
         justify-content: center;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .content-block p{
         font-size: 15px;
         max-width: 50%;
